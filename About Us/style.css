@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background: none;
+
+    -webkit-font-smoothing: antialiased;
+}
+html{
+  background: url(image-10.jpg);
+}
+.desktop-1,
+.desktop-1 * {
+  box-sizing: border-box;
+}
+.desktop-1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.frame-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.about-us {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 69px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  height: 78px;
+  margin-top:3%;
+}
+.side-quest{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  width: 74%;
+  margin-left: 13%;
+  margin-bottom: 3%
+}
+.the-team {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.kevin-cheng{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+    display:inline-block;
+
+
+}
+.justice-lee{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  display:inline-block;
+
+}
+.kevin-cheng-linkedin-1 {
+  width: 208.51px;
+  height: 200px;
+
+  object-fit: cover;
+}
+.justice-lee-linkedin-1 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.gapper{
+  width:5%;
+  display:inline-block;
+}
+.Info{
+  margin-top:1%;
+  text-align:center;
+}

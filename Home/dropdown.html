@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset= "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html">
+    <title>Sidequest Location Finder</title>
+    
+    <!-- Core Module (required) -->
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    
+    <!-- Service Module for geocoding, map tiles, etc. -->
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    
+    <!-- Map Events Module for panning, zooming, etc. -->
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    
+    <!-- UI Module for default map controls -->
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+
+    <!-- Your Custom Script -->
+    <script type="text/javascript" src="sidequest.js"></script>
+  </head>
+  <body>
+    <h1>Sidequest Location Finder</h1>
+    <p>Enter your location and choose what you want to find nearby:</p>
+    
+    <label for="location-type">Select a location type:</label>
+    <select id="location-type">
+        <option value="park">Parks</option>
+        <option value="restaurant">Restaurants</option>
+        <option value="museum">Museums</option>
+        <option value="historical">Historical Sites</option>
+    </select>
+
+    <label for="user-location">Enter your current location:</label>
+    <input type="text" id="user-location" placeholder="Enter your location">
+    
+    <button onclick="findLocations()">Find Nearby Locations</button>
+
+    <div id="map" style="width: 100%; height: 500px;"></div>
+  </body>
+</html>
